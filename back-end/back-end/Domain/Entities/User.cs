@@ -21,6 +21,8 @@ public partial class User
 
     public DateTime CreatedAt { get; set; }
 
+    public bool? IsActive { get; set; }
+
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
     public virtual ICollection<Favorite> Favorites { get; set; } = new List<Favorite>();
